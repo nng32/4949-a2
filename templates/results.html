@@ -1,0 +1,25 @@
+<!-- templates/results.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Prediction Results</h1>
+<p class="box-header">
+  Prediction
+</p>
+<div class="prediction-container">
+  <div class="prediction">
+    {{prediction}}
+  </div>
+</div>
+<p class="box-header">
+  Your information
+</p>
+<div class="entered-info">
+  <p>Exercise-induced angina: <span class="entered-value">{{exercise_angina}}</span></p>
+  <p>Oldpeak: <span class="entered-value">{{oldpeak}}</span></p>
+  <p>Chest Pain Type: Asymptomatic: <span class="entered-value">{{chest_pain_type_asy}}</span></p>
+  <p>Chest Pain Type: Atypical Angina: <span class="entered-value">{{chest_pain_type_ata}}</span></p>
+  <p>ST Slope: Flat: <span class="entered-value">{{st_slope_flat}}</span></p>
+</div>
+
+{% endblock content %}
